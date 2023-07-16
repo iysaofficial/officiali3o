@@ -1,0 +1,10 @@
+-- Main Base Code -- 
+
+saas-home 
+footer 
+preloader
+
+
+-- Gallery Main -- (want to use this code) 
+Projects
+blog
