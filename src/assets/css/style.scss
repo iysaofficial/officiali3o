@@ -720,6 +720,51 @@ Navbar Area CSS
         }
     }
 }
+
+/*===============================================*/
+/*================== FAQ CSS ===================*/
+/*===============================================*/
+
+.accordion h1 {
+    text-decoration: underline #ff4800;
+}
+.accordion-item {
+    font-weight: bold !important;
+}
+
+.accordion-header {
+    margin: 0;
+    font-weight: bold !important;
+}
+
+.accordion-button:focus {
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #ff4800;
+}
+
+.accordion-button:focus,
+.accordion-button:active {
+    border-color: black;
+}
+
+.accordion-button {
+    margin: 0 !important;
+}
+.accordion-button:not(.collapsed) {
+    background-color: white !important;
+    box-shadow: inset 0 cal #ff4800 !important;
+}
+.accordion-button:focus {
+    border-color: #ff4800 !important;
+}
+
+.accordion-collapse {
+    border-color: red !important;
+}
+
+
+.margin-atas-page {
+    margin-top: 60px;
+}
 .navbar-area {
     background-color: transparent;
     transition: $transition;
@@ -729,6 +774,7 @@ Navbar Area CSS
     top: 0;
     width: 100%;
     height: auto;
+    background: $white-color !important;
 
     &.is-sticky {
         position: fixed;

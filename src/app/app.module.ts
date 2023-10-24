@@ -20,7 +20,6 @@ import { ServicesDetailsComponent } from './components/pages/services-details/se
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { ProjectsDetailsComponent } from './components/pages/projects-details/projects-details.component';
 import { TeamComponent } from './components/pages/team/team.component';
-// import { FaqComponent } from './components/pages/faq/faq.component';
 import { PricingComponent } from './components/pages/pricing/pricing.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { SignupComponent } from './components/pages/signup/signup.component';
@@ -48,7 +47,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
     NavbarThreeComponent,
     NavbarFourComponent,
     AboutComponent,
-    // FAQComponent,
+    FaqComponent,
     ServicesComponent,
     ServicesDetailsComponent,
     ProjectsComponent,

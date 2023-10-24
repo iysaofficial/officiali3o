@@ -16,7 +16,7 @@ import { ErrorComponent } from './components/pages/error/error.component';
 import { SignupComponent } from './components/pages/signup/signup.component';
 import { LoginComponent } from './components/pages/login/login.component';
 import { PricingComponent } from './components/pages/pricing/pricing.component';
-// import { FaqComponent } from './components/pages/faq/faq.component';
+import { FaqComponent } from './components/pages/faq/faq.component';
 import { TeamComponent } from './components/pages/team/team.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { ProjectsDetailsComponent } from './components/pages/projects-details/projects-details.component';
@@ -35,7 +35,7 @@ const routes: Routes = [
     {path: 'projects', component: ProjectsComponent},
     {path: 'projects-details', component: ProjectsDetailsComponent},
     {path: 'team', component: TeamComponent},
-    // {path: 'faq', component: FaqComponent},
+    {path: 'faq', component: FaqComponent},
     {path: 'pricing', component: PricingComponent},
     {path: 'login', component: LoginComponent},
     {path: 'signup', component: SignupComponent},
