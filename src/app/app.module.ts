@@ -15,6 +15,12 @@ import { NavbarThreeComponent } from './components/layouts/navbar-three/navbar-t
 import { NavbarFourComponent } from './components/layouts/navbar-four/navbar-four.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { FaqComponent } from './components/pages/faq/faq.component';
+import { ListNewsComponent } from './components/pages/list-news/ListNews.component';
+import { News1Component } from './components/pages/list-news/ListNews.component';
+import { News2Component } from './components/pages/list-news/ListNews.component';
+import { News3Component } from './components/pages/list-news/ListNews.component';
+import { News4Component } from './components/pages/list-news/ListNews.component';
+import { News5Component } from './components/pages/list-news/ListNews.component';
 import { ServicesComponent } from './components/pages/services/services.component';
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
@@ -48,6 +54,12 @@ import { ContactComponent } from './components/pages/contact/contact.component';
     NavbarFourComponent,
     AboutComponent,
     FaqComponent,
+    ListNewsComponent,
+    News1Component,
+    News2Component,
+    News3Component,
+    News4Component,
+    News5Component,
     ServicesComponent,
     ServicesDetailsComponent,
     ProjectsComponent,

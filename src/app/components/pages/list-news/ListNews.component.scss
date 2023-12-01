@@ -1,0 +1,78 @@
+/*===============================================*/
+/*================== News CSS ===================*/
+/*===============================================*/
+
+.News-area .card {
+    background-color: #fff;
+    background-clip: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.125);
+    width: 350px;
+    margin: 10px 10px 0 10px;
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform-origin: center bottom;
+}
+
+.News-area .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.News-area .uk-grid {
+    margin-left: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.News-area .details-btn {
+    text-align: center;
+    width: 25%;
+    height: auto;
+    border-radius: 5rem;
+    font-size: 18px;
+    margin: 0 0 1rem 0;
+}
+
+@media (max-width: 12000px) {
+    .News-area .uk-grid > * {
+        padding: 10px !important;
+    }
+}
+
+.News-Page .News-Container h1 {
+    text-align: center;
+}
+.News-Page .News-Container img {
+    width: 650px;
+    // margin: auto;
+    display: block;
+    margin: 1rem auto 1rem auto;
+}
+.News-Page .News-Container p {
+    text-align: justify;
+}
+.News-Page .News-Container a {
+    display: inline-block;
+}
+.News-Page .News-Container {
+    padding: 5rem 7.5rem 5rem 7.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 769px) {
+    .News-Page .News-Container {
+        padding: 5rem 2.5rem 5rem 2.5rem;
+    }
+}
+@media (max-width: 426px) {
+    .News-Page .News-Container h1 {
+        font-size: 26px;
+    }
+    .News-Page .News-Container {
+        padding: 2.5rem 1rem 2.5rem 1rem;
+    }
+}
