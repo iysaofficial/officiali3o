@@ -72,3 +72,15 @@ export class News5Component implements OnInit {
 
   ngOnInit() {}
 }
+
+// NEWS 6
+@Component({
+  selector: "app-News6",
+  templateUrl: "./News6.component.html",
+  styleUrls: ["./ListNews.component.scss"],
+})
+export class News6Component implements OnInit {
+  constructor() {}
+
+  ngOnInit() {}
+}

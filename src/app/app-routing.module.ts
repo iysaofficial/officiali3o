@@ -23,6 +23,7 @@ import { News2Component } from './components/pages/list-news/ListNews.component'
 import { News3Component } from './components/pages/list-news/ListNews.component';
 import { News4Component } from './components/pages/list-news/ListNews.component';
 import { News5Component } from './components/pages/list-news/ListNews.component';
+import { News6Component } from './components/pages/list-news/ListNews.component';
 import { TeamComponent } from './components/pages/team/team.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
 import { ProjectsDetailsComponent } from './components/pages/projects-details/projects-details.component';
@@ -48,6 +49,7 @@ const routes: Routes = [
     {path: 'News3', component: News3Component},
     {path: 'News4', component: News4Component},
     {path: 'News5', component: News5Component},
+    {path: 'News6', component: News6Component},
     {path: 'pricing', component: PricingComponent},
     {path: 'login', component: LoginComponent},
     {path: 'signup', component: SignupComponent},
