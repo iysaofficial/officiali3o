@@ -22,6 +22,7 @@ import { News3Component } from './components/pages/list-news/ListNews.component'
 import { News4Component } from './components/pages/list-news/ListNews.component';
 import { News5Component } from './components/pages/list-news/ListNews.component';
 import { News6Component } from './components/pages/list-news/ListNews.component';
+import { FormComponent } from './components/pages/list-news/ListNews.component';
 import { ServicesComponent } from './components/pages/services/services.component';
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
@@ -62,6 +63,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
     News4Component,
     News5Component,
     News6Component,
+    FormComponent,
     ServicesComponent,
     ServicesDetailsComponent,
     ProjectsComponent,

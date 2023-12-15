@@ -84,3 +84,14 @@ export class News6Component implements OnInit {
 
   ngOnInit() {}
 }
+// Form
+@Component({
+  selector: "app-Form",
+  templateUrl: "./Form.component.html",
+  styleUrls: ["./ListNews.component.scss"],
+})
+export class FormComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit() {}
+}
