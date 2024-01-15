@@ -8,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FaqComponent implements OnInit {
   faqItems1 = [
     {
-        Question:
-            "1. Minsa, when will we get our LoA? Where will it be sent?",
+        Question: "1. Minsa, when will we get our LoA? Where will it be sent?",
         answer: "After we receive your registration, we will send a confirmation email within 1X24 hours, and for the LoA we will send it to the team leader's email address within 3X24 hours after registration.",
     },
     {
