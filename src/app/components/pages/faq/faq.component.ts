@@ -8,18 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class FaqComponent implements OnInit {
   faqItems1 = [
     {
-        question:
-            "1. Minsa, when will we get our LoA and Invoice? Where was it sent?",
-        answer: "The committee will send LoA and Invoice no later than 14 working days after you register. We will send the LoA and Invoice to the team leaders email, so make sure you include a valid and correct email address!",
+        Question:
+            "1. Minsa, when will we get our LoA? Where will it be sent?",
+        answer: "After we receive your registration, we will send a confirmation email within 1X24 hours, and for the LoA we will send it to the team leader's email address within 3X24 hours after registration.",
     },
     {
         question:
-            "2. Minsa, I registered a week ago but how come I havent received the LoA and Invoice yet?",
-        answer: "Try checking the spam folder in your team leaders email, maybe the email from the IYSA team will go to the spam folder",
+            "2. Minsa, I registered one week ago but how come I haven't received LoA and Invoice yet?",
+        answer: "Try checking the spam folder in your team leader's email, maybe the email from the IYSA team went to the spam folder.",
     },
     {
-        question: "3. Where to upload the competition file, Minsa?",
-        answer: "Upload the files requested by the committee to the Google Drive link that we have included in your LoA, make sure you read the LoA carefully, OK!",
+        question: "3. Where do you upload the competition file, Minsa?",
+        answer: "The drive link for uploading files and the link for uploading proof of payment will be included in the invoice. You will get an invoice like this",
     },
     {
         question:
