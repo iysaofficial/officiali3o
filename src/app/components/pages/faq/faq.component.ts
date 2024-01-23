@@ -19,7 +19,7 @@ export class FaqComponent implements OnInit {
     },
     {
         question: "3. Where do you upload the competition file, Minsa?",
-        answer: "The drive link for uploading files and the link for uploading proof of payment will be included in the invoice>",
+        answer: "The drive link for uploading files and the link for uploading proof of payment will be included in the invoice.",
     },
     {
         question:
