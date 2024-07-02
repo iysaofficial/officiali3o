@@ -41,6 +41,17 @@ import { BlogComponent } from './components/pages/blog/blog.component';
 import { BlogDetailsComponent } from './components/pages/blog-details/blog-details.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 
+// LOW
+import { LowtahunComponent } from './components/pages/low/lowtahun.component';
+// LOW 2024
+import { Kategori24Component } from './components/pages/low/2024/kategori/kategori24.component';
+import { Jenjangofl24Component } from './components/pages/low/2024/jenjangofl/jenjangofl24.component';
+import { Jenjangonl24Component } from './components/pages/low/2024/jenjangonl/jenjangonl24.component';
+// LOW 2023
+import { Kategori23Component } from './components/pages/low/2023/kategori/kategori23.component';
+import { Jenjangofl23Component } from './components/pages/low/2023/jenjangofl/jenjangofl23.component';
+import { Jenjangonl23Component } from './components/pages/low/2023/jenjangonl/jenjangonl23.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,6 +67,18 @@ import { ContactComponent } from './components/pages/contact/contact.component';
     NavbarFourComponent,
     AboutComponent,
     FaqComponent,
+
+    // LOW 
+    LowtahunComponent,
+    // LOW 2024
+    Kategori24Component,
+    Jenjangofl24Component,
+    Jenjangonl24Component,
+    // LOW 2023
+    Kategori23Component,
+    Jenjangofl23Component,
+    Jenjangonl23Component,
+
     ListNewsComponent,
     News1Component,
     News2Component,

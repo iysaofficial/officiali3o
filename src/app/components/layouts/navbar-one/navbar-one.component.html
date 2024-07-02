@@ -4,7 +4,11 @@
             <div class="exto-responsive-menu">
                 <div class="logo">
                     <a routerLink="/">
-                        <img class="main-logo" src="assets/img/logo/logo-i3o.png" alt="logo" />
+                        <img
+                            class="main-logo"
+                            src="assets/img/logo/logo-i3o.png"
+                            alt="logo"
+                        />
                     </a>
                 </div>
             </div>
@@ -15,19 +19,34 @@
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" routerLink="/">
-                    <img src="assets/img/logo/logo-i3o.png" alt="logo" width="80" height="70" />
+                    <img
+                        src="assets/img/logo/logo-i3o.png"
+                        alt="logo"
+                        width="80"
+                        height="70"
+                    />
                 </a>
 
                 <div class="collapse navbar-collapse mean-menu">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a routerLink="/" class="nav-link" routerLinkActive="active"
-                                [routerLinkActiveOptions]="{ exact: true }">Home</a>
+                            <a
+                                routerLink="/"
+                                class="nav-link"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                                >Home</a
+                            >
                         </li>
                         <li class="nav-item">
-                            <a href="https://drive.google.com/file/d/1eGzu4drDkKhRkYa36nqKNtc5sTLldTzt/view?usp=sharing"
-                                class="nav-link" target="_blank" routerLinkActive="active"
-                                [routerLinkActiveOptions]="{ exact: true }">Guide Book</a>
+                            <a
+                                href="https://drive.google.com/file/d/1eGzu4drDkKhRkYa36nqKNtc5sTLldTzt/view?usp=sharing"
+                                class="nav-link"
+                                target="_blank"
+                                routerLinkActive="active"
+                                [routerLinkActiveOptions]="{ exact: true }"
+                                >Guide Book</a
+                            >
                         </li>
                         <!-- <li class="nav-item">
                             <a href="javascript:void(0)" class="nav-link">Curation <i class="fa fa-angle-down"></i></a>
@@ -35,106 +54,183 @@
                             <ul class="dropdown-menu">
                                 <li class="nav-item"><a href="assets/pdf/final.pdf" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Curation</a></li> -->
 
-
                         <!-- <li class="nav-item"><a href="https://drive.google.com/drive/folders/1njVnjGiaZ-gmcdiP8k30Eq6qPScf5qIE?usp=sharing" class="nav-link" target="_blank" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Certificate Supervisor</a></li> -->
                         <!-- 
                             </ul>
                         </li> -->
 
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">List Of Winner<i
-                                    class="fa fa-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a
-                                        href="https://drive.google.com/file/d/17n2YWQ2LnnKhQm1WNhi02-xbKLJoznUO/view?usp=sharing"
-                                        class="nav-link" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}" target="_blank">List Of Winner
-                                        2022</a></li>
-
-                                <li class="nav-item"><a href="assets/pdf/LIST OF WINNER I3O 2023.pdf" class="nav-link"
-                                        routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
-                                        target="_blank">List Of Winner 2023</a></li>
-                                <!-- <li class="nav-item"><a href="https://drive.google.com/drive/folders/1njVnjGiaZ-gmcdiP8k30Eq6qPScf5qIE?usp=sharing" class="nav-link" target="_blank" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Certificate Supervisor</a></li> -->
-
-                            </ul>
+                            <a routerLink="/lowtahun" class="nav-link"
+                                >List Of Winners
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">Curation<i class="fa fa-angle-down"></i></a>
-
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a
-                                        href="https://drive.google.com/drive/folders/102RewOdAB2V-ofOgTIx_IuXc-9ygZWa5?usp=sharing"
-                                        class="nav-link" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}" target="_blank">Curation 2022</a></li>
-                                <li class="nav-item"><a
-                                        href="https://drive.google.com/drive/folders/1BB9yPGIzBH7Kf_QF3kO5ij6rLQZvtRqd?usp=sharing"
-                                        class="nav-link" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}" target="_blank">Curation 2023</a></li>
-
-
-                                <!-- <li class="nav-item"><a href="https://drive.google.com/drive/folders/1njVnjGiaZ-gmcdiP8k30Eq6qPScf5qIE?usp=sharing" class="nav-link" target="_blank" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Certificate Supervisor</a></li> -->
-
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">Gallery<i class="fa fa-angle-down"></i></a>
-
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a
-                                        href="https://drive.google.com/drive/folders/1p4FQvzeyES3qtBCvYmHIlmOoGdguSG_6?usp=sharing"
-                                        class="nav-link" target="_blank" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}">Photo 2022</a></li>
-                                <li class="nav-item"><a
-                                        href="https://drive.google.com/drive/folders/1Tvo_yjFkvMD0R5s0BKGOmi25zZy-m_aN?usp=sharing"
-                                        class="nav-link" target="_blank" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}">Photo 2023</a></li>
-                                <li class="nav-item"><a
-                                            href="https://drive.google.com/drive/folders/1ZnwYwPL8soSfdhFvRJuyxutz-PDXSEi9?usp=sharing"
-                                            class="nav-link" target="_blank" routerLinkActive="active"
-                                            [routerLinkActiveOptions]="{exact: true}">Photo 2024</a></li>
-                                <li class="nav-item"><a
-                                        href="https://drive.google.com/drive/folders/1i_U0wWZNzisFHNgTS3rDj-cFVoU_gGst?usp=sharing"
-                                        class="nav-link" target="_blank" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}">Video 2022</a></li>
-                                <li class="nav-item"><a
-                                        href="https://drive.google.com/drive/folders/1lQ0UjPWSPeQXPX-zCUng5uDSyFwV_SNz?usp=sharing"
-                                        class="nav-link" target="_blank" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}">Video 2023</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">Media Coverage<i
-                                    class="fa fa-angle-down"></i></a>
+                            <a href="javascript:void(0)" class="nav-link"
+                                >Curation<i class="fa fa-angle-down"></i
+                            ></a>
 
                             <ul class="dropdown-menu">
                                 <li class="nav-item">
-                                    <a href="/ListNews" class="nav-link" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}">News</a>
+                                    <a
+                                        href="https://drive.google.com/drive/folders/102RewOdAB2V-ofOgTIx_IuXc-9ygZWa5?usp=sharing"
+                                        class="nav-link"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        target="_blank"
+                                        >Curation 2022</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1BB9yPGIzBH7Kf_QF3kO5ij6rLQZvtRqd?usp=sharing"
+                                        class="nav-link"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        target="_blank"
+                                        >Curation 2023</a
+                                    >
+                                </li>
+
+                                <!-- <li class="nav-item"><a href="https://drive.google.com/drive/folders/1njVnjGiaZ-gmcdiP8k30Eq6qPScf5qIE?usp=sharing" class="nav-link" target="_blank" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">Certificate Supervisor</a></li> -->
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link"
+                                >Gallery<i class="fa fa-angle-down"></i
+                            ></a>
+
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1p4FQvzeyES3qtBCvYmHIlmOoGdguSG_6?usp=sharing"
+                                        class="nav-link"
+                                        target="_blank"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Photo 2022</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1Tvo_yjFkvMD0R5s0BKGOmi25zZy-m_aN?usp=sharing"
+                                        class="nav-link"
+                                        target="_blank"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Photo 2023</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1ZnwYwPL8soSfdhFvRJuyxutz-PDXSEi9?usp=sharing"
+                                        class="nav-link"
+                                        target="_blank"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Photo 2024</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1i_U0wWZNzisFHNgTS3rDj-cFVoU_gGst?usp=sharing"
+                                        class="nav-link"
+                                        target="_blank"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Video 2022</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        href="https://drive.google.com/drive/folders/1lQ0UjPWSPeQXPX-zCUng5uDSyFwV_SNz?usp=sharing"
+                                        class="nav-link"
+                                        target="_blank"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Video 2023</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link"
+                                >Media Coverage<i class="fa fa-angle-down"></i
+                            ></a>
+
+                            <ul class="dropdown-menu">
+                                <li class="nav-item">
+                                    <a
+                                        href="/ListNews"
+                                        class="nav-link"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >News</a
+                                    >
                                 </li>
                                 <!-- <li class="nav-item">
                                     <a href="/Form" class="nav-link" routerLinkActive="active"
                                         [routerLinkActiveOptions]="{exact: true}">Form</a>
                                 </li> -->
                                 <li class="nav-item">
-                                    <a href="assets/pdf/PRESS RELEASE I3O (ENG).pdf" class="nav-link" target="_blank"
-                                        routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Press
-                                        Release 2023</a>
+                                    <a
+                                        href="https://drive.google.com/file/d/17hg4duDLmCEptmNysvjd47XD8Yom9C2j/view?usp=sharing"
+                                        class="nav-link"
+                                        target="_blank"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Press Release 2024</a
+                                    >
+                                    <a
+                                        href="assets/pdf/PRESS RELEASE I3O (ENG).pdf"
+                                        class="nav-link"
+                                        target="_blank"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Press Release 2023</a
+                                    >
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a href="javascript:void(0)" class="nav-link">Certificate<i
-                                    class="fa fa-angle-down"></i></a>
+                            <a href="javascript:void(0)" class="nav-link"
+                                >Certificate<i class="fa fa-angle-down"></i
+                            ></a>
 
                             <ul class="dropdown-menu">
-
-
-                                <li class="nav-item"><a
+                                <li class="nav-item">
+                                    <a
                                         href="https://drive.google.com/drive/folders/1g14apnqatcebRtk6WxssQR_2AqEMQ3Sd?usp=drive_link"
-                                        class="nav-link" target="_blank" routerLinkActive="active"
-                                        [routerLinkActiveOptions]="{exact: true}">Certificate Supervisor</a></li>
+                                        class="nav-link"
+                                        target="_blank"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        >Certificate Supervisor</a
+                                    >
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -351,7 +447,6 @@
                             </ul>
                         </li> -->
                     </ul>
-
                 </div>
             </nav>
         </div>

@@ -32,6 +32,16 @@ import { ServicesComponent } from './components/pages/services/services.componen
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { AboutComponent } from './components/pages/about/about.component';
 
+// LOW IMPORT
+import { LowtahunComponent } from './components/pages/low/lowtahun.component';
+import { Kategori24Component } from './components/pages/low/2024/kategori/kategori24.component';
+import { Jenjangofl24Component } from './components/pages/low/2024/jenjangofl/jenjangofl24.component';
+import { Jenjangonl24Component } from './components/pages/low/2024/jenjangonl/jenjangonl24.component';
+import { Kategori23Component } from './components/pages/low/2023/kategori/kategori23.component';
+import { Jenjangofl23Component } from './components/pages/low/2023/jenjangofl/jenjangofl23.component';
+import { Jenjangonl23Component } from './components/pages/low/2023/jenjangonl/jenjangonl23.component';
+
+
 const routes: Routes = [
     {path: '', component: SaasHomeComponent},
     {path: 'marketing', component: MarketingHomeComponent},
@@ -44,6 +54,19 @@ const routes: Routes = [
     {path: 'projects-details', component: ProjectsDetailsComponent},
     {path: 'team', component: TeamComponent},
     {path: 'faq', component: FaqComponent},
+
+    // LOW
+    {path: 'lowtahun', component: LowtahunComponent},
+    // LOW 2024
+    {path: 'kategori24', component: Kategori24Component},
+    {path: 'jenjangofl24', component: Jenjangofl24Component},
+    {path: 'jenjangonl24', component: Jenjangonl24Component},
+    // LOW 2024
+    {path: 'kategori23', component: Kategori23Component},
+    {path: 'jenjangofl23', component: Jenjangofl23Component},
+    {path: 'jenjangonl23', component: Jenjangonl23Component},
+
+
     {path: 'ListNews', component: ListNewsComponent},
     {path: 'News1', component: News1Component},
     {path: 'News2', component: News2Component},
