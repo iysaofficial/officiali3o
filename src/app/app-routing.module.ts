@@ -42,7 +42,7 @@ import { Jenjangofl23Component } from './components/pages/low/2023/jenjangofl/je
 import { Jenjangonl23Component } from './components/pages/low/2023/jenjangonl/jenjangonl23.component';
 
 // LOW 2025
-import { Kategori25Component } from './components/pages/low/2025/kategori/kategori24.component';
+import { Kategori25Component } from './components/pages/low/2025/kategori/kategori25component';
 import { Jenjangofl25Component } from './components/pages/low/2025/jenjangofl/jenjangofl25.component';
 import { Jenjangonl25Component } from './components/pages/low/2025/jenjangonl/jenjangonl25.component';
 
