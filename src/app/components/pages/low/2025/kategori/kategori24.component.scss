@@ -1,0 +1,30 @@
+.low-section{
+    padding: 10rem 2.5rem 10rem 2.5rem;
+}
+
+.low-section .section-internal{
+    // display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-low {
+    color: #ffff;
+    background-color: #8b4a22;
+    padding: 14px 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-low:hover {
+    box-shadow: 8px 8px #160901;
+    // background-color: #c46830;
+    border-color: #160901;
+    color: #ffff;
+    transition: .3s;
+}
+
+.page-title-content h1{
+    color: #ffff;
+}

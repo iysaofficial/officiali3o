@@ -41,6 +41,11 @@ import { Kategori23Component } from './components/pages/low/2023/kategori/katego
 import { Jenjangofl23Component } from './components/pages/low/2023/jenjangofl/jenjangofl23.component';
 import { Jenjangonl23Component } from './components/pages/low/2023/jenjangonl/jenjangonl23.component';
 
+// LOW 2025
+import { Kategori25Component } from './components/pages/low/2025/kategori/kategori24.component';
+import { Jenjangofl25Component } from './components/pages/low/2025/jenjangofl/jenjangofl25.component';
+import { Jenjangonl25Component } from './components/pages/low/2025/jenjangonl/jenjangonl25.component';
+
 
 const routes: Routes = [
     {path: '', component: SaasHomeComponent},
@@ -57,6 +62,10 @@ const routes: Routes = [
 
     // LOW
     {path: 'lowtahun', component: LowtahunComponent},
+    // LOW 2025
+    {path: 'kategori25', component: Kategori25Component},
+    {path: 'jenjangofl25', component: Jenjangofl25Component},
+    {path: 'jenjangonl25', component: Jenjangonl25Component},
     // LOW 2024
     {path: 'kategori24', component: Kategori24Component},
     {path: 'jenjangofl24', component: Jenjangofl24Component},
