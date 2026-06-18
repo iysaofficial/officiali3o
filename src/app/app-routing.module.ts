@@ -41,6 +41,10 @@ import { Kategori23Component } from './components/pages/low/2023/kategori/katego
 import { Jenjangofl23Component } from './components/pages/low/2023/jenjangofl/jenjangofl23.component';
 import { Jenjangonl23Component } from './components/pages/low/2023/jenjangonl/jenjangonl23.component';
 
+// LOW 2026
+import { Kategori26Component } from './components/pages/low/2026/kategori/kategori26.component';
+import { Jenjangofl26Component } from './components/pages/low/2026/jenjangofl/jenjangofl26.component';
+import { Jenjangonl26Component } from './components/pages/low/2026/jenjangonl/jenjangonl26.component';
 // LOW 2025
 import { Kategori25Component } from './components/pages/low/2025/kategori/kategori25component';
 import { Jenjangofl25Component } from './components/pages/low/2025/jenjangofl/jenjangofl25.component';
@@ -62,6 +66,10 @@ const routes: Routes = [
 
     // LOW
     {path: 'lowtahun', component: LowtahunComponent},
+    // LOW 2026
+    {path: 'kategori26', component: Kategori26Component},
+    {path: 'jenjangofl26', component: Jenjangofl26Component},
+    {path: 'jenjangonl26', component: Jenjangonl26Component},
     // LOW 2025
     {path: 'kategori25', component: Kategori25Component},
     {path: 'jenjangofl25', component: Jenjangofl25Component},

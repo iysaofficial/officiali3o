@@ -43,6 +43,10 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 
 // LOW
 import { LowtahunComponent } from './components/pages/low/lowtahun.component';
+// LOW 2026
+import { Kategori26Component } from './components/pages/low/2026/kategori/kategori26.component';
+import { Jenjangofl26Component } from './components/pages/low/2026/jenjangofl/jenjangofl26.component';
+import { Jenjangonl26Component } from './components/pages/low/2026/jenjangonl/jenjangonl26.component';
 // LOW 2025
 import { Kategori25Component } from './components/pages/low/2025/kategori/kategori25component';
 import { Jenjangofl25Component } from './components/pages/low/2025/jenjangofl/jenjangofl25.component';
@@ -74,6 +78,10 @@ import { Jenjangonl23Component } from './components/pages/low/2023/jenjangonl/je
 
     // LOW 
     LowtahunComponent,
+    // LOW 2026
+    Kategori26Component,
+    Jenjangofl26Component,
+    Jenjangonl26Component,
     // LOW 2025
     Kategori25Component,
     Jenjangofl25Component,
