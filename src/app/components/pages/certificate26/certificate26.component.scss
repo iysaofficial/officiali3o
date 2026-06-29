@@ -1,0 +1,87 @@
+/* SCSS for Certificate 26 */
+.ptb-70 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.certificate-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 3rem 2rem;
+    text-align: center;
+    border: 1px solid #eaeaea;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    }
+
+    .card-icon {
+        font-size: 3rem;
+        color: #ff5e14; // use an orange or primary color
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        color: #2c2c2c;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 1.1rem;
+        color: #6c757d;
+        margin-bottom: 2.5rem;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        a.btn-certificate {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+
+            i {
+                margin-right: 8px;
+            }
+
+            &.btn-online {
+                background: linear-gradient(135deg, #007bff, #0056b3);
+                color: white;
+                box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+
+                &:hover {
+                    background: linear-gradient(135deg, #0056b3, #004494);
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.4);
+                }
+            }
+
+            &.btn-offline {
+                background: linear-gradient(135deg, #28a745, #1e7e34);
+                color: white;
+                box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+
+                &:hover {
+                    background: linear-gradient(135deg, #1e7e34, #155724);
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 20px rgba(40, 167, 69, 0.4);
+                }
+            }
+        }
+    }
+}
+

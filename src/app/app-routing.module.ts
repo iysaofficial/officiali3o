@@ -45,6 +45,7 @@ import { Jenjangonl23Component } from './components/pages/low/2023/jenjangonl/je
 import { Kategori26Component } from './components/pages/low/2026/kategori/kategori26.component';
 import { Jenjangofl26Component } from './components/pages/low/2026/jenjangofl/jenjangofl26.component';
 import { Jenjangonl26Component } from './components/pages/low/2026/jenjangonl/jenjangonl26.component';
+import { Certificate26Component } from './components/pages/certificate26/certificate26.component';
 // LOW 2025
 import { Kategori25Component } from './components/pages/low/2025/kategori/kategori25component';
 import { Jenjangofl25Component } from './components/pages/low/2025/jenjangofl/jenjangofl25.component';
@@ -63,6 +64,7 @@ const routes: Routes = [
     {path: 'projects-details', component: ProjectsDetailsComponent},
     {path: 'team', component: TeamComponent},
     {path: 'faq', component: FaqComponent},
+    {path: 'certificate26', component: Certificate26Component},
 
     // LOW
     {path: 'lowtahun', component: LowtahunComponent},

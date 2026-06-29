@@ -60,6 +60,8 @@ import { Kategori23Component } from './components/pages/low/2023/kategori/katego
 import { Jenjangofl23Component } from './components/pages/low/2023/jenjangofl/jenjangofl23.component';
 import { Jenjangonl23Component } from './components/pages/low/2023/jenjangonl/jenjangonl23.component';
 
+import { Certificate26Component } from './components/pages/certificate26/certificate26.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -94,6 +96,8 @@ import { Jenjangonl23Component } from './components/pages/low/2023/jenjangonl/je
     Kategori23Component,
     Jenjangofl23Component,
     Jenjangonl23Component,
+
+    Certificate26Component,
 
     ListNewsComponent,
     News1Component,
