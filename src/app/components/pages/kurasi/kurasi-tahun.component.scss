@@ -1,0 +1,104 @@
+/*
+ * Daftar berkas berdiri di atas gayanya sendiri, tidak menumpang `.low-*`.
+ * Halaman List of Winners adalah petak tombol besar rata tengah; daftar
+ * berkas menuntut kebalikannya — teks rata kiri, baris rapat, bisa dipindai.
+ */
+.kurasi-wadah {
+  max-width: 52rem;
+  margin: 0 auto;
+}
+
+.kurasi-ringkas {
+  margin: 0 0 1.5rem;
+  color: #5b6273;
+  font-size: 0.9rem;
+}
+
+.kurasi-kabar {
+  margin: 2.5rem 0;
+  color: #5b6273;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.kurasi-butir {
+  background: #fff;
+  border: 1px solid #dfe3ec;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+
+  h2 {
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    margin: 0;
+    padding: 0.9rem 1.1rem;
+    border-bottom: 1px solid #eef1f6;
+    color: #1b2333;
+    font-size: 0.98rem;
+    font-weight: 700;
+
+    span {
+      flex: none;
+      color: #8b93a5;
+      font-variant-numeric: tabular-nums;
+    }
+  }
+
+  ul { margin: 0; padding: 0; list-style: none; }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.65rem 1.1rem;
+    border-top: 1px solid #f2f4f8;
+    font-size: 0.88rem;
+
+    &:first-child { border-top: 0; }
+
+    /* Nama berkas kurasi panjang dan sering hanya berbeda di ujungnya, jadi
+       ia harus membungkus alih-alih dipotong. */
+    a, span:last-child {
+      min-width: 0;
+      word-break: break-word;
+    }
+
+    /*
+       Garis bawah dan warna merek ditulis eksplisit.
+
+       Situs ini me-reset `a { text-decoration: none }` secara global dan
+       memakai palet cokelat, jadi tautan yang mengandalkan bawaan peramban
+       tampak persis seperti teks biasa — dan daftar berkas yang seluruhnya
+       tautan jadi terbaca sebagai daftar mati.
+    */
+    a {
+      color: #8b4a22;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+
+      &:hover { color: #160901; }
+    }
+
+    span:last-child { color: #5b6273; }
+  }
+}
+
+.kurasi-jenis {
+  flex: none;
+  padding: 0.12rem 0.5rem;
+  border-radius: 999px;
+  background: #eef1f6;
+  color: #5b6273;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+
+  &.dokumentasi { background: #f6ece4; color: #8b4a22; }
+}
+
+@media (max-width: 480px) {
+  .kurasi-butir li { flex-wrap: wrap; }
+}

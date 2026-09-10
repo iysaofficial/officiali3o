@@ -1,0 +1,52 @@
+<app-navbar-one></app-navbar-one>
+
+<div class="page-title-area margin-atas-page">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="container">
+                <div class="page-title-content">
+                    <h1>Curation {{ tahun }}</h1>
+                    <ul>
+                        <li><a routerLink="/">Home</a></li>
+                        <li>Curation {{ tahun }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="low-section">
+    <div class="container">
+        <div class="kurasi-wadah">
+            <p *ngIf="butir === null && !galat" class="kurasi-kabar">Loading…</p>
+
+            <p *ngIf="galat" class="kurasi-kabar">
+                The document list could not be loaded. Please try again shortly.
+            </p>
+
+            <p *ngIf="butir !== null && butir.length === 0" class="kurasi-kabar">
+                No documents have been published for this edition yet.
+            </p>
+
+            <ng-container *ngIf="butir !== null && butir.length > 0">
+                <p class="kurasi-ringkas">
+                    {{ jumlah }} documents · {{ butir.length }} criteria
+                </p>
+
+                <div class="kurasi-butir" *ngFor="let b of butir">
+                    <h2><span>{{ b.nomor }}</span>{{ b.butir }}</h2>
+                    <ul>
+                        <li *ngFor="let f of b.berkas">
+                            <span class="kurasi-jenis" [class.dokumentasi]="f.jenis === 'dokumentasi'">
+                                {{ f.jenis }}
+                            </span>
+                            <a *ngIf="f.url" [href]="f.url" target="_blank" rel="noreferrer">{{ f.nama }}</a>
+                            <span *ngIf="!f.url">{{ f.nama }}</span>
+                        </li>
+                    </ul>
+                </div>
+            </ng-container>
+        </div>
+    </div>
+</section>
