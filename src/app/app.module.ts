@@ -14,6 +14,7 @@ import { NavbarTwoComponent } from './components/layouts/navbar-two/navbar-two.c
 import { NavbarThreeComponent } from './components/layouts/navbar-three/navbar-three.component';
 import { NavbarFourComponent } from './components/layouts/navbar-four/navbar-four.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { KurasiTahunComponent } from './components/pages/kurasi/kurasi-tahun.component';
 import { FaqComponent } from './components/pages/faq/faq.component';
 import { ListNewsComponent } from './components/pages/list-news/ListNews.component';
 import { News1Component } from './components/pages/list-news/ListNews.component';
@@ -76,6 +77,7 @@ import { Certificate26Component } from './components/pages/certificate26/certifi
     NavbarThreeComponent,
     NavbarFourComponent,
     AboutComponent,
+    KurasiTahunComponent,
     FaqComponent,
 
     // LOW 

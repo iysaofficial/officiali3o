@@ -1,0 +1,95 @@
+/*
+ * Daftar berkas berdiri di atas gayanya sendiri, tidak menumpang `.low-*`.
+ * Halaman List of Winners adalah petak tombol besar rata tengah; daftar
+ * berkas menuntut kebalikannya — teks rata kiri, kartu yang bisa dipindai.
+ *
+ * `padding-top` di sini cuma nilai awal: tinggi navbar diukur di
+ * `ngAfterViewInit` karena ia melayang di atas isi dan tingginya berubah
+ * menurut lebar layar.
+ */
+.kurasi-section {
+  background: #f7f6f4;
+  min-height: 70vh;
+  padding: 9rem 1.25rem 4rem;
+}
+
+.kurasi-container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.kurasi-container h1 {
+  margin: 0 0 0.35rem;
+  color: #160901;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  font-weight: 700;
+}
+
+.kurasi-ringkas {
+  margin: 0 0 1.75rem;
+  color: #6b6259;
+  font-size: 0.9rem;
+}
+
+.kurasi-kabar {
+  margin: 2.5rem 0;
+  color: #6b6259;
+  font-size: 0.95rem;
+}
+
+.kurasi-kartu-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.kurasi-kartu {
+  display: block;
+  padding: 1.1rem 1.15rem;
+  background: #fff;
+  border: 1px solid #e5ded7;
+  border-radius: 12px;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+
+  &:hover {
+    border-color: #8b4a22;
+    box-shadow: 0 6px 18px rgba(139, 74, 34, 0.12);
+    transform: translateY(-1px);
+  }
+
+  h2 {
+    margin: 0 0 0.35rem;
+    color: #8b4a22;
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+}
+
+/*
+ * Nama berkas kurasi panjang, tidak berspasi, dan sering hanya berbeda di
+ * ujungnya — "..._Life_Sciences-1788491625460.pdf". Ia harus membungkus;
+ * dipotong dengan elipsis justru menghapus bagian yang membedakannya.
+ */
+.kurasi-nama {
+  margin: 0;
+  color: #8a8078;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+.kurasi-badge {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  padding: 0.14rem 0.55rem;
+  border-radius: 999px;
+  background: #f6ece4;
+  color: #8b4a22;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

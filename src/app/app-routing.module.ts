@@ -31,6 +31,7 @@ import { ProjectsDetailsComponent } from './components/pages/projects-details/pr
 import { ServicesComponent } from './components/pages/services/services.component';
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { KurasiTahunComponent } from './components/pages/kurasi/kurasi-tahun.component';
 
 // LOW IMPORT
 import { LowtahunComponent } from './components/pages/low/lowtahun.component';
@@ -67,6 +68,10 @@ const routes: Routes = [
     {path: 'certificate26', component: Certificate26Component},
 
     // LOW
+    // Kurasi: pemilih edisi, lalu daftar berkas satu edisi. Tahunnya
+    // parameter, bukan rute per tahun seperti `kategori26`/`kategori25` —
+    // edisi baru tidak boleh menuntut satu rute baru di berkas ini.
+    {path: 'kurasi/:tahun', component: KurasiTahunComponent},
     {path: 'lowtahun', component: LowtahunComponent},
     // LOW 2026
     {path: 'kategori26', component: Kategori26Component},

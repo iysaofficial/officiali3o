@@ -1,0 +1,38 @@
+<app-navbar-one></app-navbar-one>
+
+<section class="kurasi-section" #wadah>
+    <div class="kurasi-container">
+        <h1>Curation {{ tahun }}</h1>
+
+        <p *ngIf="berkas === null && !galat" class="kurasi-kabar">Loading…</p>
+
+        <p *ngIf="galat" class="kurasi-kabar">
+            The document list could not be loaded. Please try again shortly.
+        </p>
+
+        <!--
+          Kosong dan gagal memuat sengaja dibedakan: yang satu berarti "belum
+          ada", yang lain "coba lagi". Pengunjung yang disuruh menunggu untuk
+          sesuatu yang memang belum ada akan menunggu selamanya.
+        -->
+        <p *ngIf="berkas !== null && berkas.length === 0" class="kurasi-kabar">
+            No documents have been published for this edition yet.
+        </p>
+
+        <ng-container *ngIf="berkas !== null && berkas.length > 0">
+            <p class="kurasi-ringkas">{{ berkas.length }} documents</p>
+
+            <div class="kurasi-kartu-grid">
+                <a *ngFor="let f of berkas"
+                   class="kurasi-kartu"
+                   [href]="f.url"
+                   target="_blank"
+                   rel="noreferrer">
+                    <span *ngIf="f.jenis === 'dokumentasi'" class="kurasi-badge">Dokumentasi</span>
+                    <h2>{{ f.slot }}</h2>
+                    <p class="kurasi-nama">{{ f.nama }}</p>
+                </a>
+            </div>
+        </ng-container>
+    </div>
+</section>
