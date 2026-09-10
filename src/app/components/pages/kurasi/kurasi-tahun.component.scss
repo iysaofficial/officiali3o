@@ -1,104 +1,95 @@
 /*
  * Daftar berkas berdiri di atas gayanya sendiri, tidak menumpang `.low-*`.
  * Halaman List of Winners adalah petak tombol besar rata tengah; daftar
- * berkas menuntut kebalikannya — teks rata kiri, baris rapat, bisa dipindai.
+ * berkas menuntut kebalikannya — teks rata kiri, kartu yang bisa dipindai.
+ *
+ * `padding-top` di sini cuma nilai awal: tinggi navbar diukur di
+ * `ngAfterViewInit` karena ia melayang di atas isi dan tingginya berubah
+ * menurut lebar layar.
  */
-.kurasi-wadah {
-  max-width: 52rem;
+.kurasi-section {
+  background: #f7f6f4;
+  min-height: 70vh;
+  padding: 9rem 1.25rem 4rem;
+}
+
+.kurasi-container {
+  max-width: 60rem;
   margin: 0 auto;
 }
 
+.kurasi-container h1 {
+  margin: 0 0 0.35rem;
+  color: #160901;
+  font-size: clamp(1.7rem, 4vw, 2.4rem);
+  font-weight: 700;
+}
+
 .kurasi-ringkas {
-  margin: 0 0 1.5rem;
-  color: #5b6273;
+  margin: 0 0 1.75rem;
+  color: #6b6259;
   font-size: 0.9rem;
 }
 
 .kurasi-kabar {
   margin: 2.5rem 0;
-  color: #5b6273;
+  color: #6b6259;
   font-size: 0.95rem;
-  text-align: center;
 }
 
-.kurasi-butir {
+.kurasi-kartu-grid {
+  display: grid;
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.kurasi-kartu {
+  display: block;
+  padding: 1.1rem 1.15rem;
   background: #fff;
-  border: 1px solid #dfe3ec;
+  border: 1px solid #e5ded7;
   border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 1rem;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+
+  &:hover {
+    border-color: #8b4a22;
+    box-shadow: 0 6px 18px rgba(139, 74, 34, 0.12);
+    transform: translateY(-1px);
+  }
 
   h2 {
-    display: flex;
-    align-items: baseline;
-    gap: 0.6rem;
-    margin: 0;
-    padding: 0.9rem 1.1rem;
-    border-bottom: 1px solid #eef1f6;
-    color: #1b2333;
+    margin: 0 0 0.35rem;
+    color: #8b4a22;
     font-size: 0.98rem;
     font-weight: 700;
-
-    span {
-      flex: none;
-      color: #8b93a5;
-      font-variant-numeric: tabular-nums;
-    }
-  }
-
-  ul { margin: 0; padding: 0; list-style: none; }
-
-  li {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    padding: 0.65rem 1.1rem;
-    border-top: 1px solid #f2f4f8;
-    font-size: 0.88rem;
-
-    &:first-child { border-top: 0; }
-
-    /* Nama berkas kurasi panjang dan sering hanya berbeda di ujungnya, jadi
-       ia harus membungkus alih-alih dipotong. */
-    a, span:last-child {
-      min-width: 0;
-      word-break: break-word;
-    }
-
-    /*
-       Garis bawah dan warna merek ditulis eksplisit.
-
-       Situs ini me-reset `a { text-decoration: none }` secara global dan
-       memakai palet cokelat, jadi tautan yang mengandalkan bawaan peramban
-       tampak persis seperti teks biasa — dan daftar berkas yang seluruhnya
-       tautan jadi terbaca sebagai daftar mati.
-    */
-    a {
-      color: #8b4a22;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-
-      &:hover { color: #160901; }
-    }
-
-    span:last-child { color: #5b6273; }
+    line-height: 1.35;
   }
 }
 
-.kurasi-jenis {
-  flex: none;
-  padding: 0.12rem 0.5rem;
+/*
+ * Nama berkas kurasi panjang, tidak berspasi, dan sering hanya berbeda di
+ * ujungnya — "..._Life_Sciences-1788491625460.pdf". Ia harus membungkus;
+ * dipotong dengan elipsis justru menghapus bagian yang membedakannya.
+ */
+.kurasi-nama {
+  margin: 0;
+  color: #8a8078;
+  font-size: 0.76rem;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+.kurasi-badge {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  padding: 0.14rem 0.55rem;
   border-radius: 999px;
-  background: #eef1f6;
-  color: #5b6273;
+  background: #f6ece4;
+  color: #8b4a22;
   font-size: 0.68rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-
-  &.dokumentasi { background: #f6ece4; color: #8b4a22; }
-}
-
-@media (max-width: 480px) {
-  .kurasi-butir li { flex-wrap: wrap; }
+  letter-spacing: 0.05em;
 }

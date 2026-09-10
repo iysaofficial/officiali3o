@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { KurasiService, ButirKurasi } from '../../../services/kurasi.service';
+import { KurasiService, BerkasKurasi, berkasTampil } from '../../../services/kurasi.service';
 
 /**
  * Berkas kurasi satu edisi, dibaca langsung dari dasbor.
@@ -23,10 +23,13 @@ import { KurasiService, ButirKurasi } from '../../../services/kurasi.service';
   templateUrl: './kurasi-tahun.component.html',
   styleUrls: ['./kurasi-tahun.component.scss'],
 })
-export class KurasiTahunComponent implements OnInit {
+export class KurasiTahunComponent implements OnInit, AfterViewInit, OnDestroy {
   tahun = '';
-  butir: ButirKurasi[] | null = null;
+  berkas: BerkasKurasi[] | null = null;
   galat = false;
+
+  @ViewChild('wadah') wadah?: ElementRef<HTMLElement>;
+  private pengamat?: ResizeObserver;
 
   constructor(private rute: ActivatedRoute, private kurasi: KurasiService) {}
 
@@ -41,15 +44,34 @@ export class KurasiTahunComponent implements OnInit {
      */
     this.rute.paramMap.subscribe((p) => {
       this.tahun = p.get('tahun') || '';
-      this.butir = null;
+      this.berkas = null;
       this.galat = false;
       this.kurasi.berkas(this.tahun)
-        .then((d) => { this.butir = d; })
+        .then((d) => { this.berkas = berkasTampil(d); })
         .catch(() => { this.galat = true; });
     });
   }
 
-  get jumlah(): number {
-    return (this.butir || []).reduce((n, b) => n + b.berkas.length, 0);
+  /*
+   * Jarak dari atas diukur, bukan ditebak lewat breakpoint.
+   *
+   * Navbar situs ini melayang di atas isi, dan tingginya berubah menurut
+   * lebar layar — hamburger satu baris di layar sempit, menu penuh yang bisa
+   * membungkus di layar lebar. Nilai tetap akan menutupi judul di satu lebar
+   * atau menyisakan ruang kosong di lebar lain.
+   */
+  ngAfterViewInit(): void {
+    const kop = document.querySelector('.navbar-area, header, nav') as HTMLElement | null;
+    const el = this.wadah?.nativeElement;
+    if (!kop || !el) { return; }
+
+    const sesuaikan = () => { el.style.paddingTop = `${kop.offsetHeight + 40}px`; };
+    sesuaikan();
+    this.pengamat = new ResizeObserver(sesuaikan);
+    this.pengamat.observe(kop);
+  }
+
+  ngOnDestroy(): void {
+    this.pengamat?.disconnect();
   }
 }
