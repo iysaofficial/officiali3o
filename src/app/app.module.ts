@@ -23,6 +23,7 @@ import { News3Component } from './components/pages/list-news/ListNews.component'
 import { News4Component } from './components/pages/list-news/ListNews.component';
 import { News5Component } from './components/pages/list-news/ListNews.component';
 import { News6Component } from './components/pages/list-news/ListNews.component';
+import { RegistrationComponent } from './components/pages/registration/registration.component';
 import { FormComponent } from './components/pages/list-news/ListNews.component';
 import { ServicesComponent } from './components/pages/services/services.component';
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
@@ -109,6 +110,7 @@ import { Certificate26Component } from './components/pages/certificate26/certifi
     News5Component,
     News6Component,
     FormComponent,
+    RegistrationComponent,
     ServicesComponent,
     ServicesDetailsComponent,
     ProjectsComponent,

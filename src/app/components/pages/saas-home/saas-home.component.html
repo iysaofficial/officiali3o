@@ -13,8 +13,15 @@
                                 <!-- <a class="saas-btn-one m-2" href="https://registration-i3o.vercel.app">
                                     Register Now <i class="fa fa-arrow-right"></i>
                                 </a> -->
-                                <a class="saas-btn-one m-2" href="#" disabled>
-                                    Coming Soon 2027 <i class="fa fa-arrow-right"></i>
+                                <!-- Tombol mengikuti dasbor IYSA (embed/status.js di index.html). -->
+                                <a class="saas-btn-one m-2" routerLink="/registration" data-iysa-tampil="dibuka">
+                                    Register Now <i class="fa fa-arrow-right"></i>
+                                </a>
+                                <a class="saas-btn-one m-2" href="javascript:void(0)" aria-disabled="true" style="pointer-events: none; opacity: .75" data-iysa-tampil="ditutup">
+                                    Coming Soon <span data-iysa-isi="tahun">2027</span> <i class="fa fa-arrow-right"></i>
+                                </a>
+                                <a class="saas-btn-one m-2" href="#guidebook" data-iysa-panduan="I3O" data-iysa-tampil="guidebook">
+                                    Guide Book <i class="fa fa-arrow-right"></i>
                                 </a>
                                 <!-- <a
                                     class="saas-btn-one m-2"

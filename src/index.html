@@ -26,7 +26,10 @@
 
         gtag('config', 'G-MG81VE717T');
     </script>
-    <script async defer src="https://formfacade.com/include/118368326375739848556/form/1FAIpQLSedavxp-Tj7-ax_dU4wpJoV1eFRj7y1A7mMa2y4X3Wp8xUUHw/clean.js?div=ff-compose"></script>
+    <!-- Status pendaftaran + guidebook dari dasbor IYSA (edisi yang di-pin):
+         elemen ber-data-iysa-tampil="dibuka|ditutup|guidebook|tanpa-guidebook"
+         tampil/sembunyi sendiri, data-iysa-isi="tahun" diisi tahun edisi. -->
+    <script src="https://api-dashboard.iysa.or.id/embed/status.js" data-iysa-seri="I3O" defer></script>
 
 </head>
 
@@ -38,6 +41,8 @@
          muncul sama sekali selama belum ada langkah yang dicatat. -->
     <script src="https://api-dashboard.iysa.or.id/embed/kurasi.js"
             data-iysa-kurasi="i3o" defer></script>
+    <!-- Modal panduan IYSA: Guide Book + Terms & Conditions dari dasbor. -->
+    <script src="https://api-dashboard.iysa.or.id/embed/panduan.js" defer></script>
 </body>
 
 </html>

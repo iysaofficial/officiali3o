@@ -38,12 +38,25 @@
                                 >Home</a
                             >
                         </li>
+                        <li class="nav-item" data-iysa-tampil="dibuka">
+                            <a routerLink="/registration" class="nav-link" routerLinkActive="active">Registration</a>
+                        </li>
                         <li class="nav-item">
                             <a href="javascript:void(0)" class="nav-link"
                                 >Guide Book <i class="fa fa-angle-down"></i
                             ></a>
 
                             <ul class="dropdown-menu">
+                                <!-- Edisi berjalan + Terms & Conditions dari dasbor IYSA (embed/status.js + panduan.js). -->
+                                <li class="nav-item" data-iysa-tampil="guidebook">
+                                    <a href="#guidebook" class="nav-link" data-iysa-panduan="I3O"><span data-iysa-isi="tahun">2027</span></a>
+                                </li>
+                                <li class="nav-item" data-iysa-tampil="tanpa-guidebook">
+                                    <a href="javascript:void(0)" class="nav-link" aria-disabled="true" style="opacity: .6"><span data-iysa-isi="tahun">2027</span> (Coming Soon)</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#terms-and-conditions" class="nav-link" data-iysa-panduan="I3O" data-iysa-panduan-jenis="tnc">Terms &amp; Conditions</a>
+                                </li>
                                 <li class="nav-item">
                                     <a
                                         href="https://drive.google.com/file/d/15nhP_cCqD2m-Wx20-kii4-kYmYtzOt-Y/view?usp=sharing"

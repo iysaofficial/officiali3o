@@ -31,6 +31,7 @@ import { ProjectsDetailsComponent } from './components/pages/projects-details/pr
 import { ServicesComponent } from './components/pages/services/services.component';
 import { ServicesDetailsComponent } from './components/pages/services-details/services-details.component';
 import { AboutComponent } from './components/pages/about/about.component';
+import { RegistrationComponent } from './components/pages/registration/registration.component';
 import { KurasiTahunComponent } from './components/pages/kurasi/kurasi-tahun.component';
 
 // LOW IMPORT
@@ -98,7 +99,10 @@ const routes: Routes = [
     {path: 'News4', component: News4Component},
     {path: 'News5', component: News5Component},
     {path: 'News6', component: News6Component},
-    {path: 'Form', component: FormComponent},
+    // Pendaftaran = formulir dasbor IYSA. /Form dulu formulir formfacade lama
+    // ("Registration Form WYIIA 2023", sisa templat), kini dialihkan ke sini.
+    {path: 'registration', component: RegistrationComponent},
+    {path: 'Form', redirectTo: 'registration', pathMatch: 'full'},
     {path: 'pricing', component: PricingComponent},
     {path: 'login', component: LoginComponent},
     {path: 'signup', component: SignupComponent},
